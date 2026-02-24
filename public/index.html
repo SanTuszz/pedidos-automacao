@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Pedidos</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>📊 Dashboard de Pedidos</h1>
+    <p>Front simples consumindo API Node.js</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Criar pedido</h2>
+      <form id="formPedido">
+        <input type="text" id="cliente" placeholder="Cliente" required />
+        <input type="text" id="produto" placeholder="Produto" required />
+        <input type="number" id="quantidade" placeholder="Quantidade" required />
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Pedidos cadastrados</h2>
+      <div id="loading">Carregando pedidos...</div>
+      <ul id="listaPedidos"></ul>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
